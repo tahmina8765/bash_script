@@ -6,24 +6,25 @@
 ################################################################################
 
 #Configuration
-BASE_DIR="/var/www/rnd"
-SRC_DIR= $BASE_DIR"/source"
-DIS_DIR= $BASE_DIR"/dist"
-LOG_FILE="${BASE_DIR}/log.txt"
+source "/var/www/bash_script/src/config"
 
+#FILES=$(ls ${SRC_DIR}/*csv)
 
-CURRENT_DATE=$(date)
+#for FILE in $FILES
+#do
+#    echo "${FILE}"
+#done
 
-echo "Task Started ${CURRENT_DATE}" >> $LOG_FILE
-echo "===============================" >> $LOG_FILE
-
-# scp -r source/ root@104.251.216.38:/var/www/rnd/
+#cd $SRC_DIR
+#SFTP file upload
 sftp root@104.251.216.38 << REMOTE
 
-cd /var/www/rnd/test
-put $LOG_FILE
-quit
-REMOTE
+cd $DIS_DIR
+put -r ${SRC_DIR}/*csv ${DIS_DIR}/
 
-echo "===============================" >> $LOG_FILE
-echo "Task Completed" >> $LOG_FILE
+#put $LOG_FILE
+
+
+quit
+
+REMOTE
