@@ -6,10 +6,7 @@
 ################################################################################
 
 #Configuration
-SRC_DIR="/var/www/bash_script/source"
-DIS_DIR="/var/www/rnd/tmp"
-LOG_FILE="/var/www/bash_script/log/log.txt"
-
+source "/var/www/bash_script/src/config"
 
 CURRENT_DATE=$(date)
 echo "Task Started ${CURRENT_DATE}" >> $LOG_FILE
