@@ -1,3 +1,8 @@
 SRC_DIR="/var/www/bash_script/upload"
 DIS_DIR="/var/www/rnd/tmp"
+INBOUND_DIR="/var/www/rnd/inbound"
+OUTBOUND_DIR="/var/www/rnd/outbound"
 LOG_FILE="/var/www/bash_script/log/log.txt"
+
+REMOTE_HOST="104.251.216.38"
+REMOTE_USER="root"
