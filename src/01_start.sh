@@ -8,5 +8,5 @@
 #Configuration
 source "/var/www/bash_script/src/config"
 
-CURRENT_DATE=$(date)
-echo "Task Started ${CURRENT_DATE}" >> $LOG_FILE
+#Write log
+log "i" "Task Started"

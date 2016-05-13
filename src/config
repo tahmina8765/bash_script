@@ -1,8 +1,31 @@
+#Host directories
 SRC_DIR="/var/www/bash_script/upload"
+
+#Remote Directories
 DIS_DIR="/var/www/rnd/tmp"
 INBOUND_DIR="/var/www/rnd/inbound"
 OUTBOUND_DIR="/var/www/rnd/outbound"
+
+#Log file
 LOG_FILE="/var/www/bash_script/log/log.txt"
 
+#SFTP COnfiguration
 REMOTE_HOST="104.251.216.38"
 REMOTE_USER="root"
+
+
+#Common FUnctions
+log(){
+    LOG_TYPE="Info"
+
+    case $1 in
+        "i") LOG_TYPE="Info"
+        ;;
+        "e") LOG_TYPE="Error"
+        ;;
+        "n") LOG_TYPE="Notice"
+    
+    esac
+
+    echo [$(date)] ${LOG_TYPE}: $2 >> ${LOG_FILE}
+}

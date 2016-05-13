@@ -1,2 +1,7 @@
-Task Started Thu May 12 05:26:24 CDT 2016
-Task Started Thu May 12 05:30:08 CDT 2016
+
+[Fri May 13 05:11:26 CDT 2016] Info: Task Started
+[Fri May 13 05:12:01 CDT 2016] Error: Task Started
+[Fri May 13 05:24:58 CDT 2016] Error: Upload Faild
+[Fri May 13 05:27:05 CDT 2016] Error: Upload Faild
+[Fri May 13 05:27:48 CDT 2016] Info: Upload Successfull
+[Fri May 13 05:41:59 CDT 2016] Info: Successfully moved.
